@@ -1,0 +1,469 @@
+﻿<!-- banner part start-->
+<section class="banner_part">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="banner_text">
+                    <div class="banner_text_iner">
+                        <h5>احساس راحتی</h5>
+                        <h1>کیفیت تضمینی</h1>
+                        <p>برای دیدن امکانات قابل ارائه از بخش های سایت دیدن کنید.</p>
+                        <div class="banner_btn">
+                            <a href="#" class="btn_1">ثبت نوبت </a>
+                            <a href="#" class="btn_2">ارتباط با ما</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- banner part start-->
+
+<!-- about part start-->
+<section class="about_part">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-4 col-lg-6">
+                <div class="about_img ">
+                    <img src="/client/img/about_us_1.png" class="about_img_1" alt="">
+                    <img src="/client/img/about_us_2.png" class="about_img_2" alt="">
+                </div>
+            </div>
+            <div class="col-md-7 offset-md-1 col-lg-3 offset-lg-1">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about part end-->
+
+<!-- Service part start-->
+<section class="service_part section_padding">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-lg-6 col-sm-10">
+                <div class="section_tittle">
+                    <img src="/client/img/section_tittle_icon.png" alt="icon">
+                    <h2>خدمات موجود</h2>
+                    <p>برای دریافت توضیحات تکمیلی از طریق راه های ارتباطی اقدام کنید .</p>
+                </div>
+            </div>
+        </div>
+        @if (ViewBag.offer != null)
+        {
+            foreach (var item in ViewBag.offer)
+            {
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 m-2">
+                        <div class="single_service_part">
+                            <img src="@item.Image" class="/client/img-fluid" alt="#">
+                            <div class="single_service_text">
+                                
+                                <h4>@item.Title</h4>
+                                <h1><a href="@item.Link"></a>@item.Detail</h1>
+                                <a href="#" class="btn_3"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+
+    </div>
+</section>
+<!-- Service part end-->
+
+<!-- our_offer part start-->
+<section class="our_offer">
+    <div class="container-fluid">
+        <div class="row justify-content-between">
+            <div class="col-lg-12">
+                <div class="single_offer_part">
+                    <div class="single_offer">
+                        <img src="/client/img/offer_img_1.png" alt="offer_img_1">
+                        <div class="hover_text">
+                            <img src="/client/img/icon/cutter.svg" alt="#">
+                            <h2>بهترین تجهیزات</h2>
+                            <p>رای دریافت توضیحات تکمیلی از طریق راه های ارتباطی اقدام کنید .</p>
+                            <a href="#" class="offer_btn"><span class="flaticon-slim-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="single_offer_part">
+                    <div class="single_offer">
+                        <img src="/client/img/offer_img_2.png" alt="offer_img_1">
+                        <div class="hover_text">
+                            <img src="/client/img/icon/cutter.svg" alt="#">
+                            <h2>بهترین قیمت</h2>
+                            <p>رای دریافت توضیحات تکمیلی از طریق راه های ارتباطی اقدام کنید . </p>
+                            <a href="#" class="offer_btn"><span class="flaticon-slim-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="single_offer_part">
+                    <div class="single_offer">
+                        <img src="/client/img/offer_img_3.png" alt="offer_img_1">
+                        <div class="hover_text">
+                            <img src="/client/img/icon/cutter.svg" alt="#">
+                            <h2>تجهیزات برتر</h2>
+                            <p>رای دریافت توضیحات تکمیلی از طریق راه های ارتباطی اقدام کنید .</p>
+                            <a href="#" class="offer_btn"><span class="flaticon-slim-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="single_offer_part">
+                    <div class="single_offer">
+                        <img src="/client/img/offer_img_4.png" alt="offer_img_1">
+                        <div class="hover_text">
+                            <img src="/client/img/icon/cutter.svg" alt="#">
+                            <h2>تجهیزات مدرن</h2>
+                            <p>رای دریافت توضیحات تکمیلی از طریق راه های ارتباطی اقدام کنید .</p>
+                            <a href="#" class="offer_btn"><span class="flaticon-slim-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- our_offer part end-->
+
+
+<!-- Service part start-->
+<section class="priceing_part">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-lg-6 col-sm-10">
+                <div class="section_tittle">
+                    <img src="/client/img/section_tittle_icon.png" alt="icon">
+                    <h2>لیست قیمت</h2>
+                    <p>برای آگاهی از قیمت ها به لیست زیر توجه کنید.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6 col-lg-6">
+                <div class="single_pricing_item">
+                    <img src="/client/img/pricing_img/pricing_img_1.png" alt="">
+                    <div class="single_pricing_text">
+                        <h5>کوتاهی</h5>
+                        <h6>50000 تومان</h6>
+                        <p> نوبت دهی در 3 روز آینده </p>
+                    </div>
+                </div>
+                <div class="single_pricing_item">
+                    <img src="/client/img/pricing_img/pricing_img_2.png" alt="">
+                    <div class="single_pricing_text">
+                        <h5>رنگ مو</h5>
+                        <h6>50000 تومان</h6>
+                        <p>نوبت دهی در 3 روز آینده</p>
+                    </div>
+                </div>
+                <div class="single_pricing_item">
+                    <img src="/client/img/pricing_img/pricing_img_3.png" alt="">
+                    <div class="single_pricing_text">
+                        <h5>صاف کردن مو</h5>
+                        <h6>50000 تومان</h6>
+                        <p>نوبت دهی در 3 روز آینده</p>
+                    </div>
+                </div>
+                <div class="single_pricing_item">
+                    <img src="/client/img/pricing_img/pricing_img_4.png" alt="">
+                    <div class="single_pricing_text">
+                        <h5>شامپو</h5>
+                        <h6>50000 تومان</h6>
+                        <p>نوبت دهی در 3 روز آینده</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="single_pricing_item">
+                    <img src="/client/img/pricing_img/pricing_img_5.png" alt="">
+                    <div class="single_pricing_text">
+                        <h5>شستشوی مو</h5>
+                        <h6>50000 تومان</h6>
+                        <p>نوبت دهی در 3 روز آینده</p>
+                    </div>
+                </div>
+                <div class="single_pricing_item">
+                    <img src="/client/img/pricing_img/pricing_img_6.png" alt="">
+                    <div class="single_pricing_text">
+                        <h5>اصلاح مو</h5>
+                        <h6>50000 تومان</h6>
+                        <p>نوبت دهی در 3 روز آینده</p>
+                    </div>
+                </div>
+                <div class="single_pricing_item">
+                    <img src="/client/img/pricing_img/pricing_img_7.png" alt="">
+                    <div class="single_pricing_text">
+                        <h5>صورت آقایان </h5>
+                        <h6>50000 تومان</h6>
+                        <p>نوبت دهی در 3 روز آینده</p>
+                    </div>
+                </div>
+                <div class="single_pricing_item">
+                    <img src="/client/img/pricing_img/pricing_img_8.png" alt="">
+                    <div class="single_pricing_text">
+                        <h5>سبک عروسی</h5>
+                        <h6>50000 تومان</h6>
+                        <p>نوبت دهی در 3 روز آینده</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Service part end-->
+
+
+<!--::review_part start::-->
+<section class="review_part gray_bg section_padding">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="client_review_part owl-carousel" style="direction: ltr">
+                    <div class="client_review_single">
+                        <img src="/client/img/Quote.png" class="Quote" alt="quote">
+                        <div class="client_review_text">
+                            <p>این خدمات جهت رفاه حال مشتریان ارائه می گردد
+                            </p>
+                            <p>به منظور کمک به ارتقای کیفیت خدمات ارائه شده لطفا پیشنهادات و انتقادات خود را با ما در
+                                میان بگذارید
+                            </p>
+                        </div>
+                        <div class="client_img">
+                            <img src="/client/img/client/client_1.png" alt="">
+                        </div>
+                        <h4>علیرضا کمالی <span>مدیر مجموعه</span></h4>
+                    </div>
+                    <div class="client_review_single">
+                        <img src="/client/img/Quote.png" class="Quote" alt="quote">
+                        <div class="client_review_text media-body">
+                            <p>این خدمات جهت رفاه حال مشتریان ارائه می گردد</p>
+                            <p>به منظور کمک به ارتقای کیفیت خدمات ارائه شده لطفا پیشنهادات و انتقادات خود را با ما در
+                                میان بگذارید
+                            </p>
+                        </div>
+                        <div class="client_img">
+                            <img src="/client/img/client/client_1.png" alt="">
+                        </div>
+                        <h4>علیرضا کمالی <span>مدیر مجموعه</span></h4>
+                    </div>
+                    <div class="client_review_single">
+                        <img src="/client/img/Quote.png" class="Quote" alt="quote">
+                        <div class="client_review_text">
+                            <p>این خدمات جهت رفاه حال مشتریان ارائه می گردد</p>
+                            <p>به منظور کمک به ارتقای کیفیت خدمات ارائه شده لطفا پیشنهادات و انتقادات خود را با ما در
+                                میان بگذارید
+                            </p>
+                        </div>
+                        <div class="client_img">
+                            <img src="/client/img/client/client_1.png" alt="">
+                        </div>
+                        <h4>علیرضا کمالی <span>مدیر مجموعه</span></h4>
+                    </div>
+                    <div class="client_review_single">
+                        <img src="/client/img/Quote.png" class="Quote" alt="quote">
+                        <div class="client_review_text">
+                            <p>این خدمات جهت رفاه حال مشتریان ارائه می گردد</p>
+                            <p>به منظور کمک به ارتقای کیفیت خدمات ارائه شده لطفا پیشنهادات و انتقادات خود را با ما در
+                                میان بگذارید
+                            </p>
+                        </div>
+                        <div class="client_img">
+                            <img src="/client/img/client/client_1.png" alt="">
+                        </div>
+                        <h4>علیرضا کمالی <span>مدیر مجموعه</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--::review_part end::-->
+
+<!--::chefs_part start::-->
+<section class="artist_part">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-lg-6 col-sm-10">
+                <div class="section_tittle">
+                    <img src="/client/img/section_tittle_icon.png" alt="icon">
+                    <h2>آشنایی با عوامل</h2>
+                    <p>این خدمات جهت رفاه حال مشتریان ارائه می گردد.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-4">
+                <div class="single_blog_item">
+                    <div class="single_blog_img">
+                        <img src="/client/img/artist/artist_1.png" alt="artist">
+                    </div>
+                    <div class="single_text">
+                        <div class="single_blog_text text-center">
+                            <h3>حسین رضایی</h3>
+                            <p>آرایشگر</p>
+                            <div class="social_icon">
+                                <a href="#"> <i class="ti-facebook"></i> </a>
+                                <a href="#"> <i class="ti-twitter-alt"></i> </a>
+                                <a href="#"> <i class="ti-instagram"></i> </a>
+                                <a href="#"> <i class="ti-skype"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="single_blog_item">
+                    <div class="single_blog_img">
+                        <img src="/client/img/artist/artist_2.png" alt="artist">
+                    </div>
+                    <div class="single_text">
+                        <div class="single_blog_text text-center">
+                            <h3>محمد رضایی</h3>
+                            <p>آرایشگر</p>
+                            <div class="social_icon">
+                                <a href="#"> <i class="ti-facebook"></i> </a>
+                                <a href="#"> <i class="ti-twitter-alt"></i> </a>
+                                <a href="#"> <i class="ti-instagram"></i> </a>
+                                <a href="#"> <i class="ti-skype"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="single_blog_item">
+                    <div class="single_blog_img">
+                        <img src="/client/img/artist/artist_3.png" alt="artist">
+                    </div>
+                    <div class="single_text">
+                        <div class="single_blog_text text-center">
+                            <h3>علی رضایی</h3>
+                            <p>آرایشگر</p>
+                            <div class="social_icon">
+                                <a href="#"> <i class="ti-facebook"></i> </a>
+                                <a href="#"> <i class="ti-twitter-alt"></i> </a>
+                                <a href="#"> <i class="ti-instagram"></i> </a>
+                                <a href="#"> <i class="ti-skype"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--::chefs_part end::-->
+
+<!--::regervation_part start::-->
+<section class="regervation_part section_padding">
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-lg-7">
+                <div class="regervation_part_iner">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="ایمیل" class="form-control" id="inputEmail4" placeholder="نام*">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="رمز عبور" class="form-control" id="inputPassword4" placeholder="ایمیل*">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <select class="form-control" id="Select">
+                                    <option value="1" selected>انتخاب نوع خدمات*</option>
+                                    <option value="2">کوتاهی مو</option>
+                                    <option value="3">رنگ مو</option>
+                                    <option value="4">پاکسازی صورت</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" id="pnone" placeholder="شماره تلفن*">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <div class="input-group date">
+                                    <input id="datepicker" type="text" class="form-control" placeholder="تاریخ*" />
+                                </div>
+                            </div>
+                            <div class="form-group time_icon col-md-6">
+                                <select class="form-control" id="Select2">
+                                    <option value="" selected>ساعت*</option>
+                                    <option value="1">8 تا 10</option>
+                                    <option value="1">10 تا 12</option>
+                                    <option value="1">12 تا 14</option>
+                                    <option value="1">14 تا 16</option>
+                                    <option value="1">16 تا 18</option>
+                                    <option value="1">18 تا 20</option>
+                                    <option value="1">20 تا 22</option>
+                                    <option value="1">22 تا 24</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <textarea class="form-control" id="Textarea" rows="4" placeholder="یادداشت*"></textarea>
+                            </div>
+                        </div>
+
+
+                        <div class="regerv_btn">
+                            <a href="#" class="regerv_btn_iner">نوبت گرفتن</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--::regervation_part end::-->
+
+<!-- blog part start-->
+<section class="blog_part service_part section_padding">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section_tittle">
+                    <img src="/client/img/section_tittle_icon.png" alt="icon">
+                    <h2>جدیدترین اخبار مد</h2>
+                    <p>جدیدترین اخبار مربوط به مد را می توانید از اینجا دنبال کنید.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="single_service_part">
+                    <img src="/client/img/service/single_service_1.png" alt="">
+                    <div class="single_service_text">
+                        <p> <a href="blog.html">مجله زیبایی</a> <span>|</span> 21 آذر 98</p>
+                        <h4> <a href="#">هر آنچه درباره کوتاهی مو باید بدانید...</a></h4>
+                        <p>این خدمات جهت رفاه حال مشتریان ارائه می گردد.</p>
+                        <a href="#" class="btn_3">اطلاعات بیشتر</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="single_service_part">
+                    <img src="/client/img/service/single_service_2.png" alt="">
+                    <div class="single_service_text">
+                        <p> <a href="blog.html">مجله زیبایی</a> <span>|</span> 21 آذر 98</p>
+                        <h4> <a href="#">مدل موی مناسب صورت شما چیست...</a></h4>
+                        <p>این خدمات جهت رفاه حال مشتریان ارائه می گردد.</p>
+                        <a href="#" class="btn_3">اطلاعات بیشتر</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="single_service_part">
+                    <img src="/client/img/service/single_service_3.png" alt="">
+                    <div class="single_service_text">
+                        <p> <a href="blog.html">مجله زیبایی</a><span>|</span> 21 آذر 98</p>
+                        <h4> <a href="#">جدیدترین مدل های موی 2020...</a></h4>
+                        <p>این خدمات جهت رفاه حال مشتریان ارائه می گردد.</p>
+                        <a href="#" class="btn_3">اطلاعات بیشتر</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- blog_part part end-->
