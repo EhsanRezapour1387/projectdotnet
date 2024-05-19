@@ -4,8 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using projectdotnet.Models;
 
 namespace projectdotnet.Areas.Admin.Controllers;
-[Area("Admin")]
 [Authorize]
+[Area("Admin")]
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
